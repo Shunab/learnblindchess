@@ -1,0 +1,20 @@
+/* Container for dropdowns */
+.dropdown-container {
+    display: flex;
+    gap: 10px;  
+  }
+  
+  /* Styling for each dropdown */
+  .dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    appearance: none;  /* Remove default styles for some browsers */
+    -webkit-appearance: none; /* Remove default styles for Safari */
+    -moz-appearance: none;  /* Remove default styles for Firefox */
+    background-color: #fff;  
+    width: 95px;
+    margin-left: 10px;
+  }
+  

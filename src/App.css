@@ -1,0 +1,61 @@
+:root {
+  --color1: #9A3B3B;
+  --color2: #F9DEC9;
+  --button: #9A3B3B;
+  --buttonshadow: #802E2E; 
+  --buttonborder: #B24A4A; 
+  --font1:#F9DEC9;
+  --font2:#9A3B3B;
+  --background: #F9DEC9;
+  --backgroundlight: #FDF2E5;
+}
+
+.piece-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* spacing between the radio button labels */
+    margin-top: 60px;
+  }
+  
+  .piece-selection label {
+    position: relative;
+    cursor: pointer;
+    background: var(--button);
+    border: solid 1px var(--buttonborder);
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #ecf0f1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+  
+    -webkit-box-shadow: 0px 6px 0px var(--buttonshadow);
+    -moz-box-shadow: 0px 6px 0px var(--buttonshadow);
+    box-shadow: 0px 6px 0px var(--buttonshadow);
+  }
+  
+  .piece-selection label:active {
+    -webkit-box-shadow: 0px 2px 0px var(--buttonshadow);
+    -moz-box-shadow: 0px 2px 0px var(--buttonshadow);
+    box-shadow: 0px 2px 0px var(--buttonshadow);
+    position: relative;
+    top: 4px;
+  }
+  
+  .piece-selection input[type="radio"] {
+    display: none; /* hide the default radio buttons */
+  }
+  
+  .piece-selection input[type="radio"]:checked + label {
+    background: var(--buttonshadow); /* change background color when radio button is selected */
+    box-shadow: 0px 2px 0px var(--buttonshadow);
+    top: 4px;
+  }
+  
+  
+ .main{
+    align-items: center;
+   
+ }
