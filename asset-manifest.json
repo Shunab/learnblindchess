@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Shunab/blindchesstrainer/static/css/main.3233f094.css",
-    "main.js": "/Shunab/blindchesstrainer/static/js/main.8a406187.js",
-    "static/media/rook_b.svg": "/Shunab/blindchesstrainer/static/media/rook_b.fdc575582c2cbe2ec82093702945226f.svg",
-    "static/media/knight_b.svg": "/Shunab/blindchesstrainer/static/media/knight_b.7930be9e07b51bc0e069b1d77e31261a.svg",
-    "static/media/queen_b.svg": "/Shunab/blindchesstrainer/static/media/queen_b.cf388bf415c0d33ec16f23593b8d0d91.svg",
-    "static/media/knight_w.svg": "/Shunab/blindchesstrainer/static/media/knight_w.d47944d2cee4f8c707d1907706c142fa.svg",
-    "static/media/bishop_b.svg": "/Shunab/blindchesstrainer/static/media/bishop_b.04932f63ef10dcdee115b649286230f5.svg",
-    "static/media/bishop_w.svg": "/Shunab/blindchesstrainer/static/media/bishop_w.aa411d5809c6380713b4312d55aafc53.svg",
-    "static/media/rook_w.svg": "/Shunab/blindchesstrainer/static/media/rook_w.9e48b84f189eea24339f8a679e7a664f.svg",
-    "static/media/queen_w.svg": "/Shunab/blindchesstrainer/static/media/queen_w.7a1aecff0f22ff68c43f9b7f8a81d0b4.svg",
-    "index.html": "/Shunab/blindchesstrainer/index.html",
-    "static/media/micOn.svg": "/Shunab/blindchesstrainer/static/media/micOn.6c89b93a4cfb3b0de7294cf742c9b1b5.svg",
-    "static/media/micOff.svg": "/Shunab/blindchesstrainer/static/media/micOff.9b85123ca8530bdb41f891dada8cd78d.svg",
-    "main.3233f094.css.map": "/Shunab/blindchesstrainer/static/css/main.3233f094.css.map",
-    "main.8a406187.js.map": "/Shunab/blindchesstrainer/static/js/main.8a406187.js.map"
+    "main.css": "/blindchesstrainer/static/css/main.3233f094.css",
+    "main.js": "/blindchesstrainer/static/js/main.ca22625b.js",
+    "static/media/rook_b.svg": "/blindchesstrainer/static/media/rook_b.fdc575582c2cbe2ec82093702945226f.svg",
+    "static/media/knight_b.svg": "/blindchesstrainer/static/media/knight_b.7930be9e07b51bc0e069b1d77e31261a.svg",
+    "static/media/queen_b.svg": "/blindchesstrainer/static/media/queen_b.cf388bf415c0d33ec16f23593b8d0d91.svg",
+    "static/media/knight_w.svg": "/blindchesstrainer/static/media/knight_w.d47944d2cee4f8c707d1907706c142fa.svg",
+    "static/media/bishop_b.svg": "/blindchesstrainer/static/media/bishop_b.04932f63ef10dcdee115b649286230f5.svg",
+    "static/media/bishop_w.svg": "/blindchesstrainer/static/media/bishop_w.aa411d5809c6380713b4312d55aafc53.svg",
+    "static/media/rook_w.svg": "/blindchesstrainer/static/media/rook_w.9e48b84f189eea24339f8a679e7a664f.svg",
+    "static/media/queen_w.svg": "/blindchesstrainer/static/media/queen_w.7a1aecff0f22ff68c43f9b7f8a81d0b4.svg",
+    "index.html": "/blindchesstrainer/index.html",
+    "static/media/micOn.svg": "/blindchesstrainer/static/media/micOn.6c89b93a4cfb3b0de7294cf742c9b1b5.svg",
+    "static/media/micOff.svg": "/blindchesstrainer/static/media/micOff.9b85123ca8530bdb41f891dada8cd78d.svg",
+    "main.3233f094.css.map": "/blindchesstrainer/static/css/main.3233f094.css.map",
+    "main.ca22625b.js.map": "/blindchesstrainer/static/js/main.ca22625b.js.map"
   },
   "entrypoints": [
     "static/css/main.3233f094.css",
-    "static/js/main.8a406187.js"
+    "static/js/main.ca22625b.js"
   ]
 }
