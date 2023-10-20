@@ -8,13 +8,23 @@
   --font2:#9A3B3B;
   --background: #252B48;
   --backgroundlight: #D1B8A8;
-  --navbar: #1d1d36;
+  --navbar: #1d1d36
+  ;
+}
+
+body {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
 }
 
 .container {
   display: flex;
   margin-top: 40px;
   justify-content: center;  
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .controls {
@@ -24,27 +34,53 @@
   margin-left: 80px;
   
 }
+/* ChessBoard */
+.board-and-mic {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  justify-content: space-between; 
+  aspect-ratio: 1/1;
+  max-width: 100%;
+}
+
+
+.Mic{
+  all: unset;
+  size: 20px;
+  color: var(--button);
+}
+
+.MicContainer {
+  margin-top: -50px;
+  margin-right: -70px;
+  width: 10vw; /* Adjust according to your design */
+  height: 10vw; /* Keeping it proportional to the width */
+  max-width: 60px; /* You can adjust this */
+  max-height: 60px; /* You can adjust this */
+}
+
+
 
 #chessboard {
   display: grid;
-  grid-template-columns: repeat(8, 100px);
-  grid-template-rows: repeat(8, 100px);
-  width: 800px;
-  height: 800px;
-  background-color: blue;
-  margin-right: 20px;
-  margin-left: -100px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 90vw;
+  max-width: 800px;
+  height: 90vw;
+  max-height: 800px;
   outline: 5px solid var(--navbar); /* This will give the appearance of the border */
-  
-  
+  aspect-ratio: 1/1;
+  margin: auto;
 }
 
 #chessboard .tile {
   display: flex;
   justify-content: center; 
   align-items: center;     
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   
 
   user-select: none;
@@ -60,7 +96,7 @@
 #chessboard .white-tile {
   background-color: var(--color2);
 }
-
+/* Pieces */
 .bishop {
   width: 80%; 
   height: 80%; 
@@ -87,8 +123,6 @@
   margin: auto; 
 }
 
-
-
 .selected {
   border: 2px solid blue;  
 }
@@ -107,7 +141,6 @@
   text-align: center; 
   font-weight: 700;
 }
-
 
 .white-tile .coordinate {
   color: var(--color1);
@@ -189,35 +222,8 @@
   top: 4px;
   
 }
-.board-and-mic {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Ensure right alignment */
-  justify-content: space-between; /* This should push the board to the top and the mic to the bottom */
-}
 
-
-.Mic{
-  all: unset;
-  size: 20px;
-  color: var(--button);
-}
-
-.MicContainer {
-  margin-top: -50px;
-  margin-right: -50px;
-  width: 10vw; /* Adjust according to your design */
-  height: 10vw; /* Keeping it proportional to the width */
-  max-width: 60px; /* You can adjust this */
-  max-height: 60px; /* You can adjust this */
-}
-
-body {
-  user-select: none;
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-}
+/* Position selector dropdown */
 
 ul.dropdown{ 
   position: relative; 
@@ -319,3 +325,4 @@ ul.dropdown ul li a:hover{
   font-weight: bold;
   color: #9A3B3B;
 }
+

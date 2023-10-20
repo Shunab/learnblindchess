@@ -50,11 +50,11 @@ function Chessboard({
 
 
   const handleTileClick = useCallback((x, y, source = 'click') => {
-    console.log("handleTileClick called with", x, y);
+    
     const validMoves = getValidMovesFunction(PiecePosition);
     
     if (!isMicEnabled && source === 'voice') {
-        console.log("Mic is disabled. Ignoring voice command.");
+       
         return;
     }
 
@@ -74,12 +74,13 @@ function Chessboard({
         const transcript = event.results[current][0].transcript.trim().toUpperCase();
     
         if (event.results[current].isFinal) {
-            console.log('Spoken transcript:', transcript);
+            console.log('spoken transcript:',transcript)
+            
     
             if (transcript.length === 2 && horizontalAxis.includes(transcript.charAt(0)) && verticalAxis.includes(transcript.charAt(1))) {
                 const x = horizontalAxis.indexOf(transcript.charAt(0));
                 const y = verticalAxis.indexOf(transcript.charAt(1).toString());
-                console.log('Deciphered board position:', [x, y]);
+                
                 handleTileClick(x, y, 'voice');
             }
         }
@@ -150,12 +151,14 @@ function Chessboard({
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
+    const viewportWidth = window.innerWidth; // Get viewport width
+    const desiredBoardSize = viewportWidth < 800 ? viewportWidth - 40 : 800;
+
     return( 
     <div className='container'>
 
     <div className="board-and-mic"> 
-        <div id="chessboard" className={isBoardHidden ? 'hidden-board': ''}>{board}</div>
-
+    <div id="chessboard" style={{width: `${desiredBoardSize}px`, height: `${desiredBoardSize}px`}} className={isBoardHidden ? 'hidden-board': ''}>{board}</div>
         <div className='MicContainer'>
             <button className='Mic' onClick={toggleMic}>
                 {isMicEnabled ? 

@@ -59,3 +59,56 @@
     align-items: center;
    
  }
+
+
+ @media only screen and (max-width: 900px) {
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .controls {
+    margin-left: 0;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+
+  #chessboard {
+    max-width: 100%;
+  }
+
+  .board-and-mic {
+    /* remove margin-bottom: -10px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-direction: column;  /* make sure children stack vertically */
+    overflow-y: visible;     /* ensure that even if mic overflows, it's visible */
+    justify-content: center;
+    align-items: center;
+  }
+  .MicContainer {
+    margin-top: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .Mic{
+    margin: 0;
+  }
+  .main {
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
