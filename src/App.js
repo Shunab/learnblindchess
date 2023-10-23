@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Chessboard from './components/ChessBoard';
+import Chessboard from './components/chessboard/ChessBoard';
 import whiteKnightImage from './assets/images/knight_w.svg';
 import blackKnightImage from './assets/images/knight_b.svg';
 import whiteBishopImage from './assets/images/bishop_w.svg';

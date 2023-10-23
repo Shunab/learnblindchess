@@ -33,3 +33,27 @@ export const isRecognitionActive = () => {
     return isListening;
 };
 
+export const muteSpeech = () => {
+    window.speechSynthesis.cancel();
+};
+export const muteMediaElements = () => {
+    const mediaElements = document.querySelectorAll("audio, video");
+    mediaElements.forEach(media => {
+        media.muted = true;
+    });
+};
+
+
+export const unmuteMediaElements = () => {
+    const mediaElements = document.querySelectorAll("audio, video");
+    mediaElements.forEach(media => {
+        media.muted = false;
+    });
+};
+
+export const unmuteSpeech = (activeUtterance) => {
+    console.log("unmuteSpeech called");
+    if (activeUtterance && activeUtterance.current) {
+        activeUtterance.current.volume = 1;
+    }
+};
