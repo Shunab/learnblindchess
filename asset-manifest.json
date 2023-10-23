@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "./static/css/main.da563350.css",
-    "main.js": "./static/js/main.4bd3990a.js",
+    "main.css": "./static/css/main.703ae1aa.css",
+    "main.js": "./static/js/main.9d56b9c7.js",
+    "static/media/SpeakerOn.svg": "./static/media/SpeakerOn.c42e2c114ed0aae07cc36be9b505de3a.svg",
     "static/media/rook_b.svg": "./static/media/rook_b.fdc575582c2cbe2ec82093702945226f.svg",
     "static/media/knight_b.svg": "./static/media/knight_b.7930be9e07b51bc0e069b1d77e31261a.svg",
+    "static/media/SpeakerOff.svg": "./static/media/SpeakerOff.ad11ac157a08c1c9c45021b441634d6c.svg",
     "static/media/queen_b.svg": "./static/media/queen_b.cf388bf415c0d33ec16f23593b8d0d91.svg",
     "static/media/knight_w.svg": "./static/media/knight_w.d47944d2cee4f8c707d1907706c142fa.svg",
     "static/media/bishop_b.svg": "./static/media/bishop_b.04932f63ef10dcdee115b649286230f5.svg",
@@ -13,11 +15,11 @@
     "index.html": "./index.html",
     "static/media/micOn.svg": "./static/media/micOn.6c89b93a4cfb3b0de7294cf742c9b1b5.svg",
     "static/media/micOff.svg": "./static/media/micOff.9b85123ca8530bdb41f891dada8cd78d.svg",
-    "main.da563350.css.map": "./static/css/main.da563350.css.map",
-    "main.4bd3990a.js.map": "./static/js/main.4bd3990a.js.map"
+    "main.703ae1aa.css.map": "./static/css/main.703ae1aa.css.map",
+    "main.9d56b9c7.js.map": "./static/js/main.9d56b9c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.da563350.css",
-    "static/js/main.4bd3990a.js"
+    "static/css/main.703ae1aa.css",
+    "static/js/main.9d56b9c7.js"
   ]
 }
