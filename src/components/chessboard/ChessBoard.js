@@ -166,6 +166,22 @@ function Chessboard({
     </div>
 
     <div className="control-container">
+        <div className="control-label">Select Challenge</div>
+            <div>
+            {challengeList.map(challenge => (
+                <button 
+                    className='ButtonContainer'
+                    key={challenge.id} 
+                    onClick={() => startChallenge(challenge.id)}
+                >
+                    {challenge.id}
+                </button>
+            ))}
+            </div>
+        {currentChallenge && <p>{currentChallenge.description}</p>}
+    </div>
+
+    <div className="control-container">
         <div className="control-label">Select Color</div>
         <div className="Piece-selection">
             <img 
@@ -209,21 +225,7 @@ function Chessboard({
             </button>
         </div>
     </div>
-    <div className="control-container">
-        <div className="control-label">Select Challenge</div>
-            <div>
-            {challengeList.map(challenge => (
-                <button 
-                    className='ButtonContainer'
-                    key={challenge.id} 
-                    onClick={() => startChallenge(challenge.id)}
-                >
-                    {challenge.id}
-                </button>
-            ))}
-            </div>
-        {currentChallenge && <p>{currentChallenge.description}</p>}
-    </div>
+    
      </div>
 </div>
     );

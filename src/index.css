@@ -14,3 +14,30 @@ code {
     monospace;
 }
 
+
+.main, .container, .controls {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: hidden; /* Allow vertical scrolling only if needed */
+  max-height: 100vh; /* Optional: Limit the height to the viewport */
+}
+
+@media only screen and (max-width: 900px) {
+  html,body{
+    overflow-y: auto;
+  }
+
+}
+
+@media only screen and (max-height: 950px) {
+  html,body{
+    overflow-y: auto;
+  }
+
+}

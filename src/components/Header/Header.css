@@ -1,99 +1,143 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 body {
-    line-height: 1.7em;
-    color: #7f8c8d;
-    font-size: 13px;
+    padding: 0;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, label {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+   
+    height: 50px;
+    background-color: #3B2A1F;  
+    padding: 0 5%;
+}
+
+nav .logo { 
+    float: left;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
     color: var(--font1);
 }
 
-/* -- MENU STYLES -- */
-.home-menu {
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+   
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.home-menu {
-    background: #3B2A1F;
+nav .links li {
+    list-style: none;
 }
 
-.pure-menu.pure-menu-fixed {
-    border-bottom: none;
-    z-index: 4;
-}
-
-.home-menu .pure-menu-heading {
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    
     color: var(--font1);
-    font-weight: 400;
-    font-size: 120%;
+    text-decoration: none;
+    position: relative;
 }
 
-.home-menu .pure-menu-selected a {
+nav .links a:hover {
     color: white;
 }
 
-.home-menu a {
-    color: var(--font1);
+nav .links a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
 }
 
-.home-menu li a:hover,
-.home-menu li a:focus {
-    background: none;
-    border: none;
-    color: #AECFE5;
+nav .links a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+    color: white;
 }
 
-@media (min-width: 48em) {
-    .home-menu {
-        text-align: left;
+#nav-toggle {
+     position: absolute;
+     top: -50px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--font1);
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
     }
-    
-    .home-menu ul {
-        float: right;
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 50px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, .8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
     }
-}
-
-/* -- MENU STYLES -- */
-.pure-menu-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.pure-menu-item {
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-}
-
-.pure-menu-link, .pure-menu-heading {
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
-.pure-menu-horizontal .pure-menu-list {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.pure-menu-horizontal .pure-menu-item {
-    margin: 0;
-    display: inline-block;
-}
-
-.pure-menu-horizontal .pure-menu-list > .pure-menu-item {
-    margin-right: 1em;
-}
-
-.pure-menu-horizontal .pure-menu-list > .pure-menu-item:last-child {
-    margin-right: 0;
+    nav .links a {
+        font-size: 20px;
+    }
+    nav :checked ~ .links {
+        bottom: 0;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked ~ .icon-burger .line:nth-child(1) {
+        transform: translateY(8px) rotate(225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
 }

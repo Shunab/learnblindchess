@@ -13,7 +13,7 @@
 .piece-selection {
     display: flex;
     justify-content: center;
-    gap: 10px; /* spacing between the radio button labels */
+    gap: 10px; 
     margin-top: 60px;
   }
   
@@ -45,11 +45,11 @@
   }
   
   .piece-selection input[type="radio"] {
-    display: none; /* hide the default radio buttons */
+    display: none; 
   }
   
   .piece-selection input[type="radio"]:checked + label {
-    background: var(--buttonshadow); /* change background color when radio button is selected */
+    background: var(--buttonshadow); 
     box-shadow: 0px 2px 0px var(--buttonshadow);
     top: 4px;
   }
@@ -74,6 +74,7 @@
     margin-top: 15px;
     padding-top: 15px;
     overflow-y: auto;
+    height: auto;
   }
 
   #chessboard {
@@ -81,12 +82,12 @@
   }
 
   .board-and-mic {
-    /* remove margin-bottom: -10px; */
+   
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    flex-direction: column;  /* make sure children stack vertically */
-    overflow-y: visible;     /* ensure that even if mic overflows, it's visible */
+    flex-direction: column;  
+    overflow-y: visible;    
     justify-content: center;
     align-items: center;
   }
@@ -110,8 +111,8 @@
     font-size: 20px; 
     
   }
+  
 }
-
 
 
 

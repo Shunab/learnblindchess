@@ -25,7 +25,8 @@ function Board({
         const recognitionInstance = getRecognition();
         const handleResult = (event) => {
             const current = event.resultIndex;
-            const transcript = event.results[current][0].transcript.trim().toUpperCase();
+            const transcript = event.results[current][0].transcript.trim().toUpperCase().replace(/\s+/g, '');
+
         
             if (event.results[current].isFinal) {
                 console.log('spoken transcript:',transcript)
@@ -66,7 +67,7 @@ function Board({
                 y={j}
                 pieceImage={PieceColor === 'white' ? whitePieceImage : blackPieceImage}
                 pieceName={pieceName}
-                isPiecePresent={isPiecePresent} // This will be true only if isPieceHidden is false and there's a piece at this position
+                isPiecePresent={isPiecePresent} 
                 handleTileClick={handleTileClick}
                 showCoordinates={showCoordinates}
                 highlight={isHighlighted}
